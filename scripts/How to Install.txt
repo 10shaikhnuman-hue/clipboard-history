@@ -1,0 +1,53 @@
+CLIPBOARD HISTORY — HOW TO INSTALL
+==================================
+
+Keeps everything you copy (text, images, files) saved on your Mac,
+so you can paste it again later, even days afterwards.
+Everything stays on your Mac. Nothing is sent to the internet.
+
+Needs macOS 14 (Sonoma) or newer. Works on Apple Silicon and Intel Macs.
+
+
+1. INSTALL
+   Drag "Clipboard History" onto the "Applications" folder in this window.
+
+
+2. OPEN IT THE FIRST TIME
+   Open your Applications folder and double-click "Clipboard History".
+
+   macOS will probably say it "can't be opened" or "Apple could not verify" it.
+   That's normal for apps that don't come from the App Store. To allow it:
+
+     a. Click "Done" (or "OK") on that message.
+     b. Open System Settings → Privacy & Security.
+     c. Scroll down. Next to "Clipboard History was blocked…", click "Open Anyway".
+     d. Enter your Mac password and click "Open Anyway" again.
+
+   You only need to do this once.
+
+   Still won't open? Open the Terminal app, paste this line, press Return,
+   then double-click the app again:
+
+     xattr -cr "/Applications/Clipboard History.app"
+
+   Or skip all of this: paste this line into Terminal and press Return.
+   It downloads, installs and opens the latest version for you:
+
+     curl -fsSL https://raw.githubusercontent.com/10shaikhnuman-hue/clipboard-history/main/install.sh | bash
+
+
+3. USE IT
+   • Copy anything as usual (⌘C, screenshots, "Copy Image" in a browser…).
+   • Press ⌘⇧V (Command + Shift + V) anywhere to see your history.
+   • Pick an item and press Return (or double-click it) to paste it.
+   • Opening the app again from Applications or Spotlight also shows the history.
+   • There's also a clipboard icon in the menu bar at the top of the screen.
+     On MacBooks with a notch it can be hidden when the menu bar is full;
+     ⌘⇧V always works.
+
+
+4. OPTIONAL
+   • Paste for you: the first time you pick an item, macOS asks for
+     "Accessibility" permission. Allow it and the app pastes for you.
+     Without it, the item is copied and you just press ⌘V yourself.
+   • Start automatically: click the menu bar icon → "Open at Login".
